@@ -10,12 +10,12 @@ import rocketseat.com.passin.domain.attendee.Attendee;
 import java.time.LocalDateTime;
 
 @Entity
-@Table
+@Table(name = "check_ins")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Checkin {
+public class CheckIn {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
